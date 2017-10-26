@@ -4,6 +4,8 @@ Feature base approach to manage code properly, it is composed of the
 following directory structure:
 
  * src
+    * mocks : To add mocks for test cases.
+    * test : To add test cases for components and containers.
     * components : To add any components use this folder.
     * containers : These are used for adding any specific feature into your application, can be anything from login to creating a user.
     * network : For any network related calls to server create your api's over here. **Note that API_URI is set by default in webpack configuration file.**
