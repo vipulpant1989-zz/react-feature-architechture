@@ -22,7 +22,7 @@ following directory structure:
 Technologies used are React, Redux for front end development, Jest and Enzyme for testing, Webpack, babel for bundling , npm for package management and sinon for mocking. 
  
      
-To run the application please user **npm start**</br>
+To run the application please use **npm start**</br>
 
 To build application in production mode use **npm build**
     
