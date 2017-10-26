@@ -32,13 +32,12 @@ const webPackConfig = () => {
       }),
       new webpack.optimize.UglifyJsPlugin({
         compressor: {
-          "__DEVTOOLS__": false,
           warnings: false,
           screw_ie8: true
         }
       }),
       new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+        'process.env.NODE_ENV': JSON.stringify('production'),
         'process.env.API_URI': JSON.stringify("http://ndb-pos.dev.nextdayblinds.com")//Change this according to api uri
       }),
       new webpack.LoaderOptionsPlugin({
@@ -96,4 +95,3 @@ const webPackConfig = () => {
 }
 
 module.exports = webPackConfig;
-
