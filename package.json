@@ -86,6 +86,7 @@
     "resolve-url": "^0.2.1",
     "resolve-url-loader": "^2.1.0",
     "sass-loader": "^6.0.6",
+    "sinon": "^4.0.2",
     "snapsvg": "^0.5.1",
     "stats-webpack-plugin": "latest",
     "style-loader": "^0.18.2",
