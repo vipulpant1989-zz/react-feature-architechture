@@ -24,7 +24,7 @@ Technologies used are React, Redux for front end development, Jest and Enzyme fo
      
 To run the application please use **npm start**</br>
 
-To build application in production mode use **npm build**
+To build application in production mode use **npm run build**
     
 To run test cases use **npm test**
     
