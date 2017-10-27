@@ -28,7 +28,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "preinstall" : "npm install -g webpack webpack-cli rimraf",
-    "depcheck": "node_modules/.bin/depcheck --ignore-dirs=dist,.artifacts,src/html,src/scss,src/svg",
+    "depcheck": "node_modules/.bin/depcheck --ignore-dirs=dist,.artifacts,src/containers,src/img,src/svg,src/network,src/template,src/Utils",
     "build": "npm run preinstall && rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors",
     "test": "jest"
   },
