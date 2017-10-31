@@ -17,6 +17,9 @@ const webPackConfig = () => {
     entry: {
       main : path.join(__dirname, 'src/app.js'),
     },
+    devServer: {
+      historyApiFallback: true
+    },
     output: {
       path: path.join(__dirname, 'dist/'),
       filename: '[name].[hash].js',

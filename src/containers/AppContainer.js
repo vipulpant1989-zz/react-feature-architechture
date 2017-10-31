@@ -2,12 +2,11 @@ import React,{Component,PropTypes} from 'react';
 import {Provider,connect} from 'react-redux';
 import getStore from '../Utils/getStore';
 import createHistory from 'history/createBrowserHistory'
-import { ConnectedRouter } from 'react-router-redux';
-import { Route } from 'react-router';
+import { Router, Route } from 'react-router-dom';
 import Login from './login';
-
-
-const history = createHistory();
+import Dashboard from './dashboard';
+import { ConnectedRouter, syncHistoryWithStore, routerReducer } from 'react-router-redux'
+import history from '../Utils/getHistory';
 
 class App extends Component{
 
@@ -22,11 +21,12 @@ class App extends Component{
     render(){
       return(
          <Provider store={this.store}>
-            <ConnectedRouter history={history}>
+            <Router history={history}>
               <div>
                 <Route exact path="/" component={Login}/>
+                <Route path="/dashboard" component={Dashboard}/>
               </div>
-            </ConnectedRouter>
+            </Router>
          </Provider>
       );
     }

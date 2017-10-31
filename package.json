@@ -22,12 +22,13 @@
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-router": "^4.2.0",
-    "react-router-redux": "^5.0.0-alpha.8",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
     "webpack": "^3.6.0"
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "preinstall" : "npm install -g webpack webpack-cli rimraf",
+    "preinstall": "npm install -g webpack webpack-cli rimraf",
     "depcheck": "node_modules/.bin/depcheck --ignore-dirs=dist,.artifacts,src/containers,src/img,src/svg,src/network,src/template,src/Utils",
     "build": "npm run preinstall && rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors",
     "test": "jest"
